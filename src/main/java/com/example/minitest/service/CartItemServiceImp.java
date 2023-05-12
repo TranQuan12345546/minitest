@@ -48,7 +48,7 @@ public class CartItemServiceImp implements CartItemService{
     @Override
     public boolean decrementQuantity(Integer id) {
         for (CartItem cartItem : cartItems) {
-            if(cartItem.getId() == id) {
+            if(cartItem.getId() == id)
                 if (cartItem.getCount() > 1) {
                     cartItem.setCount(cartItem.getCount() - 1);
                     return true;
